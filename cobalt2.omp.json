@@ -5,8 +5,8 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#3AD900",
-          "foreground": "#000000",
+          "background": "#1e7442",
+          "foreground": "#ffffff",
           "properties": {
             "style": "full"
           },
@@ -15,8 +15,8 @@
           "type": "os"
         },
         {
-          "background": "#3AD900",
-          "foreground": "#000000",
+          "background": "#1e7442",
+          "foreground": "#ffffff",
           "trailing_diamond": "\uE0B0",
           "properties": {
             "style": "full"
@@ -26,8 +26,8 @@
           "type": "session"
         },
         {
-          "background": "#1478DB",
-          "foreground": "#000000",
+          "background": "#1c3586",
+          "foreground": "#ffffff",
           "leading_diamond": "<transparent,background>\uE0B0</>",
           "trailing_diamond": "\uE0B0",
           "properties": {
