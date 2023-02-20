@@ -38,6 +38,18 @@
           "type": "path"
         },
         {
+          "background": "#52057B",
+          "foreground": "#ffffff",
+          "leading_diamond": "<transparent,background>\uE0B0</>",
+          "trailing_diamond": "\uE0B0",
+          "properties": {
+            "style": "full"
+          },
+          "style": "diamond",
+          "template": "\ue235 {{ if .Venv }}{{ .Venv }} {{ .Full }}{{ end }} ",
+          "type": "python"
+        },
+        {
           "background": "#3AD900",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#FFC600{{ end }}",
