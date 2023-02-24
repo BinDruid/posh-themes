@@ -23,7 +23,6 @@
         {
           "foreground": "#ffffff",
           "properties": {
-            // "home_icon": "\uf7db",
             "style": "full"
           },
           "style": "plain",
@@ -46,7 +45,7 @@
             "fetch_upstream_icon": true
           },
           "style": "plain",
-          "template": "<#CB4B16>[</>{{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Changed }}<#FF6F00> \uf046 {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }}<#CB4B16>]</>",
+          "template": "<#ffffff>--</><#CB4B16>[</>{{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Changed }}<#FF6F00> \uf046 {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }}<#CB4B16>]</>",
           "type": "git"
         }
       ],
@@ -65,6 +64,23 @@
         {
           "foreground": "#ff4d00",
           "style": "plain",
+          "properties": {
+            "alpine": "\uf300",
+            "arch": "\uf303",
+            "centos": "\uf304",
+            "debian": "\uf306",
+            "elementary": "\uf309",
+            "fedora": "\uf30a",
+            "gentoo": "\uf30d",
+            "linux": "\ue712",
+            "macos": "\ue711",
+            "manjaro": "\uf312",
+            "mint": "\uf30f",
+            "opensuse": "\uf314",
+            "raspbian": "\uf315",
+            "ubuntu": "\uf31c",
+            "windows": "\ue70f"
+          },
           "template": "<b>[</b>{{.Icon}} ",
           "type": "os"
         },
@@ -80,7 +96,7 @@
             "fetch_version": true
           },
           "style": "diamond",
-          "template": "<#CB4B16>[</><#ff8800>\ue235 </>{{ if .Venv }}{{ .Venv }}{{ end }}<#CB4B16>]</>",
+          "template": "<#ffffff>--</><#CB4B16>[</><#ff8800>\ue235 </>{{ if .Venv }}{{ .Venv }}{{ end }}<#CB4B16>]</>",
           "type": "python"
         },
         {
@@ -89,7 +105,7 @@
             "fetch_version": true
           },
           "style": "diamond",
-          "template": "<#CB4B16>[</><#ff8800>\ue718 \ue71e </>{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}<#CB4B16>]</>",
+          "template": "<#ffffff>--</><#CB4B16>[</><#ff8800>\ue781 </>{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}<#CB4B16>]</>",
 
           "type": "node"
         },
